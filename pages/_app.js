@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import "../styles/globals.scss";
+import Layout from "../components/Layout";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+    return (
+        <>
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
+            <Footer />
+        </>
+    );
 }
 
-export default MyApp
+export default MyApp;

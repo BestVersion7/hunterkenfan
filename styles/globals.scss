@@ -1,0 +1,251 @@
+@mixin mQ($width) {
+    @media (min-width: $width) {
+        @content;
+    }
+}
+
+// button
+.icons {
+    height: 2.5em;
+    width: 2.5em;
+    background-color: lightblue;
+}
+
+// navigation
+header {
+    // display: none;
+    background-color: rgb(27, 20, 3);
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    height: 3.5em;
+    @include mQ(30em) {
+        display: block;
+    }
+    .navButton {
+        height: 3.5em;
+        width: 2.5em;
+        margin-left: 1.75em;
+        color: rgb(137, 224, 137);
+        z-index: 5;
+        @include mQ(30em) {
+            display: none;
+        }
+    }
+    .section-link-container-mobile {
+        display: none;
+        @include mQ(30em) {
+            display: block;
+        }
+    }
+    .section-link-container-desktop {
+        position: absolute;
+        top: 0em;
+        z-index: -2;
+        .section-link-container-blank {
+            height: 5em;
+            @include mQ(30em) {
+                display: none;
+            }
+        }
+        background-color: rgb(53, 49, 49);
+        height: 100vh;
+        width: 20em;
+        @include mQ(30em) {
+            background-color: rgb(24, 21, 14);
+            height: 2em;
+            width: auto;
+        }
+    }
+    .section-nav-links {
+        display: block;
+        text-align: center;
+        line-height: 3.5em;
+        color: rgb(137, 224, 137);
+        border-top: 0.1px solid rgb(197, 245, 197);
+        border-bottom: 0.1px solid rgb(197, 245, 197);
+        height: 3.5em;
+
+        &:link {
+            text-decoration: none;
+        }
+        &:hover {
+            color: rgb(79, 209, 137);
+            background-color: lighten(rgb(53, 51, 44), 13);
+        }
+        @include mQ(30em) {
+            display: inline-block;
+            width: 5em;
+            border-top: none;
+            border-bottom: none;
+            border-right: 0.1px solid rgb(197, 245, 197);
+        }
+    }
+}
+
+.section-work-container {
+    padding: 0 1em;
+    @include mQ(30em) {
+        padding: 0 3em;
+    }
+    @include mQ(50em) {
+        padding: 0 7em;
+    }
+    .section-work-container-items {
+        @include mQ(30em) {
+            display: grid;
+            grid-template-columns: 13em 1fr;
+        }
+    }
+}
+
+body {
+    margin: 0;
+    #root {
+        padding: 0;
+        margin: auto;
+        max-width: 100em;
+    }
+    .quote {
+        text-align: center;
+    }
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+    p {
+        padding: 0 1em;
+    }
+}
+
+.section-skills {
+    background: rgb(231, 230, 158);
+    padding: 0 1em;
+
+    @include mQ(30em) {
+        padding: 0 3em;
+    }
+    @include mQ(50em) {
+        padding: 0 7em;
+    }
+    text-align: center;
+    .section-skills-item {
+        display: grid;
+        text-align: left;
+        @include mQ(30em) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mQ(60em) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .section-skills-item-mapped {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 25em;
+            @include mQ(30em) {
+            }
+        }
+    }
+}
+
+.section-profile {
+    background-color: beige;
+    h1 {
+        margin-top: 0;
+    }
+    .section-profile-about {
+        padding: 0 1em;
+        @include mQ(30em) {
+            display: grid;
+            padding: 0 3em;
+            grid-template-columns: minmax(auto, 7em) 1fr;
+        }
+        @include mQ(50em) {
+            padding: 0 7em;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 50%;
+            @include mQ(30em) {
+                margin-top: 1em;
+                width: 100%;
+                max-width: 15em;
+            }
+        }
+    }
+}
+
+.section-home {
+    background-image: url(https://res.cloudinary.com/crimson-flamingo/image/upload/v1560960995/3105%20portfolio%20screenshots/own_website_home.jpg);
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: -webkit-fill-available;
+    @include mQ(30em) {
+        background-attachment: fixed;
+        background-position: center;
+    }
+    @include mQ(50em) {
+        background-size: 150vw;
+    }
+    @include mQ(70em) {
+        background-size: 100vw;
+    }
+    .section-home-name {
+        position: relative;
+        top: 4em;
+        width: auto;
+        background: yellow;
+        border: solid black;
+        box-shadow: 5px 10px;
+    }
+    .icon-down {
+        position: absolute;
+        background-color: yellow;
+        bottom: 1em;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 4em;
+    }
+}
+
+.section-projects {
+    padding: 0 1em;
+    background-color: rgb(240, 255, 215);
+    @include mQ(30em) {
+        padding: 0 3em;
+    }
+    @include mQ(50em) {
+        padding: 0 7em;
+    }
+
+    .section-projects-web {
+        @include mQ(40em) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1em;
+        }
+        @include mQ(70em) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include mQ(30em) {
+        }
+        .section-projects-web-items {
+            display: grid;
+            border: 0.1em solid black;
+        }
+    }
+}
+
+footer {
+    background: darkslategray;
+    text-align: center;
+    color: darken($color: white, $amount: 10);
+    a {
+        padding: 0 0.3em;
+    }
+}
