@@ -1,7 +1,7 @@
 export const webProjects = [
     {
         title: "My Personal Blog",
-        url_link: "https://athomeblogs.herokuapp.com/",
+        url_link: "https://hunterkenfan.com/blog",
         url_image:
             "https://res.cloudinary.com/crimson-flamingo/image/upload/v1604689614/3105%20portfolio%20screenshots/myblog.png",
         description:

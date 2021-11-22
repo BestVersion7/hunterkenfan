@@ -47,14 +47,9 @@ const Navigation = () => {
                         <Link href="/project">
                             <a className="section-nav-links">Project</a>
                         </Link>
-                        <a
-                            className="section-nav-links"
-                            href="https://athomeblogs.herokuapp.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Blog
-                        </a>
+                        <Link href="/blog">
+                            <a className="section-nav-links">Blog</a>
+                        </Link>
                     </div>
                 ) : (
                     <div className="section-link-container-desktop">
@@ -92,14 +87,14 @@ const Navigation = () => {
                                 Project
                             </a>
                         </Link>
-                        <a
-                            className="section-nav-links"
-                            href="https://athomeblogs.herokuapp.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Blog
-                        </a>
+                        <Link href="/blog">
+                            <a
+                                onClick={handleClickLink}
+                                className="section-nav-links"
+                            >
+                                Blog
+                            </a>
+                        </Link>
                     </div>
                 )}
             </nav>
