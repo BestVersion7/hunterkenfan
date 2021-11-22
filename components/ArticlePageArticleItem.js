@@ -1,7 +1,5 @@
 import convertDate from "../utils/convertDate";
-import DangerousHTML from "../utils/dangerousHTML";
 import Image from "next/image";
-
 const ArticlePageArticlearticle = ({ article }) => {
     // console.log(article);
     return (
@@ -20,7 +18,9 @@ const ArticlePageArticlearticle = ({ article }) => {
                     layout="responsive"
                 />
             </figure>
-            <DangerousHTML post={article.article_post} />
+            <div
+                dangerouslySetInnerHTML={{ __html: article.article_post }}
+            />
         </article>
     );
 };
