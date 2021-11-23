@@ -39,8 +39,9 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
     const data = await fetchPopularArticles();
-    const datajson = await JSON.parse(JSON.stringify(data));
-    const paths = datajson.map((item) => ({
+    // console.log(data)
+    // const datajson = await JSON.parse(JSON.stringify(data));
+    const paths = data.map((item) => ({
         params: { articleUrl: item.article_url },
     }));
     // console.log(paths)
