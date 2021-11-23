@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "preBuild": "yum install postgresql-devel -y",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
