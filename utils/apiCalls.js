@@ -1,4 +1,4 @@
-import {Pool} from "pg";
+import { Pool } from "pg";
 // const {Pool} = pg.native
 
 import dotenv from "dotenv";
@@ -28,18 +28,18 @@ export const fetchArticles = async () => {
     }
 };
 
-export const fetchPopularArticles = async () => {
-    try {
-        const articles = await pool.query(
-            "SELECT article_url FROM article LIMIT 10;"
-        );
-        return articles.rows;
-    } catch (err) {
-        return {
-            notFound: true,
-        };
-    }
-};
+// export const fetchPopularArticles = async () => {
+//     try {
+//         const articles = await pool.query(
+//             "SELECT article_url FROM article LIMIT 10;"
+//         );
+//         return articles.rows;
+//     } catch (err) {
+//         return {
+//             notFound: true,
+//         };
+//     }
+// };
 
 export const fetchArticleByUrl = async (url) => {
     try {
