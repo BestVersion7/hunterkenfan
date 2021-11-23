@@ -1,6 +1,6 @@
 import WorkExperienceItemList from "../components/WorkExperienceItemList";
 import { Quote } from "../components/Quote";
-import Image from "next/image";
+// import Image from "next/image";
 import suffolk from "../public/images/suffolk.png";
 import Meta from "../components/Meta";
 
@@ -17,10 +17,10 @@ const ProfilePage = () => {
                 <hr />
                 <h2>My Story</h2>
                 <article className="section-profile-about">
-                    <Image
+                    <img
                         height="4em"
                         width="4em"
-                        layout="responsive"
+                        // layout="responsive"
                         src="https://res.cloudinary.com/crimson-flamingo/image/upload/v1603662887/1104%20profile/me.png"
                         alt="hunter"
                     />

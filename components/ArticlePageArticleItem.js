@@ -1,5 +1,5 @@
 import convertDate from "../utils/convertDate";
-import Image from "next/image";
+// import Image from "next/image";
 const ArticlePageArticlearticle = ({ article }) => {
     // console.log(article);
     return (
@@ -9,13 +9,13 @@ const ArticlePageArticlearticle = ({ article }) => {
                 Hunter Fan {convertDate(article.article_date)}
             </p>
             <figure style={{ maxWidth: "50em" }}>
-                <Image
+                <img
                     src={article.article_image}
                     title={article.article_image_alt}
                     alt={article.article_image_alt}
                     width="3em"
                     height="2em"
-                    layout="responsive"
+                    // layout="responsive"
                 />
             </figure>
             <div

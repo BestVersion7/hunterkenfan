@@ -1,5 +1,5 @@
 import { string } from "prop-types";
-import Image from "next/image";
+// import Image from "next/image";
 
 export const ProjectItem = ({
     title,
@@ -24,12 +24,12 @@ export const ProjectItem = ({
                     {githubLink}
                 </a>
             </p>
-            <Image
+            <img
                 src={url_image}
                 alt={title}
                 width="4em"
                 height="4em"
-                layout="responsive"
+                // layout="responsive"
             />
             <p>
                 <b>Technologies Used:</b> {technologiesUsed}

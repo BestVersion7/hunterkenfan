@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 const ArticleItem = ({
@@ -13,13 +13,13 @@ const ArticleItem = ({
             <Link href={`/blog/${article_url}`}>
                 <a>
                     <figure style={{ maxWidth: "50em" }}>
-                        <Image
+                        <img
                             src={article_image}
                             title={article_image_alt}
                             alt={article_image_alt}
                             width="3em"
                             height="2em"
-                            layout="responsive"
+                            // layout="responsive"
                         />
 
                         <figcaption>{article_title}</figcaption>
