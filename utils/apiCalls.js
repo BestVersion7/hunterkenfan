@@ -13,6 +13,7 @@ export const pool = new Pool({
     ssl: {
         rejectUnauthorized: false,
     },
+    
 });
 
 export const fetchArticles = async () => {
