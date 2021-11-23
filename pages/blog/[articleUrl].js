@@ -1,4 +1,4 @@
-import { fetchArticleByUrl, fetchPopularArticles } from "../../utils/apiCalls";
+import { fetchArticleByUrl } from "../../utils/apiCalls";
 import { useRouter } from "next/router";
 import ArticlePageArticleItem from "../../components/ArticlePageArticleItem";
 import Meta from "../../components/Meta";
@@ -38,14 +38,24 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const data = await fetchPopularArticles();
-    // console.log(data)
-    // const datajson = await JSON.parse(JSON.stringify(data));
-    const paths = data.map((item) => ({
-        params: { articleUrl: item.article_url },
-    }));
+    // const data = await fetchPopularArticles();
+    // const paths = data.map(({article_url}) => ({
+    //     params: { articleUrl: article_url },
+    // }));
     return {
-        paths,
+        paths: [
+            { params: { articleUrl: "my-operating-philosophy-in-life" } },
+            {
+                params: {
+                    articleUrl: "phone-cases-are-junk",
+                },
+            },
+            {
+                params: {
+                    articleUrl: "positives-and-negatives-of-social-media",
+                },
+            },
+        ],
         fallback: true,
     };
 }
