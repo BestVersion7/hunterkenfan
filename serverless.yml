@@ -1,7 +1,7 @@
 plugins:
   - serverless-bundle
 
-  custom:
+custom:
   bundle:
     ignorePackages:
       - pg-native
