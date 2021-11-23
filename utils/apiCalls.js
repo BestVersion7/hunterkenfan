@@ -1,4 +1,4 @@
-import pg from "pg-native";
+import {Pool} from "pg";
 // const {Pool} = pg.native
 
 import dotenv from "dotenv";
