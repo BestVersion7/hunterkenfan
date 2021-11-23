@@ -1,30 +1,31 @@
 {
-  "name": "15.11.21my",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "preBuild": "yum install postgresql-devel -y",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "axios": "^0.24.0",
-    "cookie": "^0.4.1",
-    "dotenv": "^10.0.0",
-    "jsonwebtoken": "^8.5.1",
-    "next": "11.0.1",
-    "node-sass": "^5.0.0",
-    "pg": "^8.7.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "sharp": "^0.29.3"
-  },
-  "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "12.0.4",
-    "prop-types": "^15.7.2",
-    "serverless-bundle": "^5.1.0"
-  }
+    "name": "15.11.21my",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "preBuild": "yum install postgresql-devel -y",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "axios": "^0.24.0",
+        "cookie": "^0.4.1",
+        "dotenv": "^10.0.0",
+        "jsonwebtoken": "^8.5.1",
+        "next": "11.0.1",
+        "node-sass": "^5.0.0",
+        "pg": "^8.7.1",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-icons": "^4.3.1",
+        "sharp": "^0.29.3",
+        "pg-native": "^3.0.0"
+    },
+    "devDependencies": {
+        "eslint": "7.32.0",
+        "eslint-config-next": "12.0.4",
+        "prop-types": "^15.7.2",
+        "serverless-bundle": "^5.1.0"
+    }
 }
