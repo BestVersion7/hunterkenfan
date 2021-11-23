@@ -29,7 +29,7 @@ export const fetchArticles = async () => {
 export const fetchPopularArticles = async () => {
     try {
         const articles = await pool.query(
-            "SELECT * FROM article LIMIT 10;"
+            "SELECT article_url FROM article LIMIT 10;"
         );
         return articles.rows;
     } catch (err) {

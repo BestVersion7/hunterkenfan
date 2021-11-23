@@ -44,7 +44,6 @@ export async function getStaticPaths() {
     const paths = data.map((item) => ({
         params: { articleUrl: item.article_url },
     }));
-    // console.log(paths)
     return {
         paths,
         fallback: true,
