@@ -1,6 +1,6 @@
 custom:
   webpack:
-    # webpackConfig: webpack.config.js
+    webpackConfig: webpack.config.js
     includeModules: false # this is telling webpack to reference all dependencies (non-dev dependencies) in node_modules and serverless would upload the package.json with the node_modules folder
     forceExclude:
        - pg-native
