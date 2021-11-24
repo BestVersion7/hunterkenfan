@@ -1,14 +1,14 @@
 export const webProjects = [
     {
         title: "My Personal Blog",
-        url_link: "https://hunterkenfan.com/blog",
+        url_link: "https://hunterkf.com/blog",
         url_image:
             "https://res.cloudinary.com/crimson-flamingo/image/upload/v1604689614/3105%20portfolio%20screenshots/myblog.png",
         description:
             "The goal of this website is to apply the Next.js server side rendering and static paths. I migrated to Next.js because of these features and SEO. The articles I published were written back in college. I also have a master/admin page, hidden of course, for me to publish, update, delete articles. All the data is stored on PostgreSQL.",
         // "This is a full stack website deployed on Heroku. The goal of this website is for me to write and share articles with you. I have created my own API: REST for user authentication, and SOCKET.io for live comments. I also have a master/admin page running on web sockets for me to publish, update, delete articles real time. All the data is stored on PostgreSQL.",
-        technologiesUsed: "Next.js, SCSS, Postgres, Git",
-        gitHubLink: "https://github.com/BestVersion7/myblogsite",
+        technologiesUsed: "Next.js, Vercel, SCSS, Postgres, Git",
+        gitHubLink: "https://github.com/BestVersion7/hunterkenfan",
     },
     {
         title: "Drink Recipe Blog",

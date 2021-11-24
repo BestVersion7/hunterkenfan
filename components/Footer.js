@@ -21,7 +21,7 @@ const Footer = () => {
                 <AiFillLinkedin className="icons" />
             </a>
             <br />
-            2021 - <b>www.hunterkenfan.com</b>
+            2021 - <b>www.hunterkf.com</b>
         </footer>
     );
 };
