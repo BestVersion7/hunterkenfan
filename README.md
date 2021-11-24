@@ -1,2 +1,2 @@
 personal website
-www.hunterkenfan.com
+www.hunterkf.com
