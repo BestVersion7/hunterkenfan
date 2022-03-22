@@ -14,21 +14,31 @@ export const ProjectItem = ({
             <h4>{title}</h4>
             <p>
                 <b>Link to Project: </b>
-                <a href={url_link} target="_blank" rel="noopener noreferrer">
+                <a
+                    style={{ wordWrap: "break-word" }}
+                    href={url_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {url_link}
                 </a>
             </p>
             <p>
                 <b>Link to Code: </b>
-                <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                <a
+                    style={{ wordWrap: "break-word" }}
+                    href={githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {githubLink}
                 </a>
             </p>
             <Image
                 src={url_image}
                 alt={title}
-                width="4em"
-                height="4em"
+                width="100%"
+                height="100%"
                 layout="responsive"
             />
             <p>

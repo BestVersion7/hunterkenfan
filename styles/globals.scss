@@ -102,11 +102,11 @@ header {
 
 body {
     margin: 0;
-    #root {
-        padding: 0;
-        margin: auto;
-        max-width: 100em;
-    }
+    padding: 0;
+    margin: auto;
+    max-width: 100em;
+    background-color: rgb(209, 233, 243);
+
     .quote {
         text-align: center;
     }
@@ -204,7 +204,7 @@ body {
 }
 
 .section-projects {
-    padding: 0 1em;
+    // padding: 0 1em;
     background-color: rgb(240, 255, 215);
     @include mQ(30em) {
         padding: 0 3em;
@@ -214,18 +214,22 @@ body {
     }
 
     .section-projects-web {
+        // text-align: center;
+        padding: 0 1em;
         @include mQ(40em) {
+            padding: 0;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            // grid-template-columns: repeat(2, 1fr);
             grid-gap: 1em;
         }
         @include mQ(70em) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
-        @include mQ(30em) {
-        }
+
         .section-projects-web-items {
-            display: grid;
+            // width: 0%;
+            max-width: 30em;
             border: 0.1em solid black;
         }
     }
