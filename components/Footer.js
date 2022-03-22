@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Image from "next/image";
 
 const Footer = () => {
     return (
@@ -10,7 +10,13 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 title="Github"
             >
-                <AiFillGithub className="icons" />
+                <Image
+                    height="66%"
+                    width="66%"
+                    // layout="responsive"
+                    src="https://res.cloudinary.com/crimson-flamingo/image/upload/v1556071829/230419%20Icons/github.png"
+                    alt="github"
+                />
             </a>
             <a
                 href="https://www.linkedin.com/in/hunterkfan"
@@ -18,10 +24,16 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 title="LinkedIn"
             >
-                <AiFillLinkedin className="icons" />
+                <Image
+                    height="66%"
+                    width="66%"
+                    // layout="fill"
+                    src="https://res.cloudinary.com/crimson-flamingo/image/upload/v1603470384/230419%20Icons/logo-linkedin.png"
+                    alt="linkedin"
+                />
             </a>
             <br />
-            2021 - <b>www.hunterkf.com</b>
+            2022 - <b>www.hunterkf.com</b>
         </footer>
     );
 };

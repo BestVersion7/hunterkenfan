@@ -120,7 +120,7 @@ export const webDevelopmentSkills = [
     {
         name: "Web Sockets (Socket.io)",
         starFill: 4,
-        starHalf: 1,
+        starHalf: 0,
         star: 0,
     },
     // {

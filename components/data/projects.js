@@ -1,11 +1,22 @@
 export const webProjects = [
     {
-        title: "My Personal Blog",
+        title: "Ecommerce Store",
+        url_link: "https://createprismapg.d1pgiyfr7nyazb.amplifyapp.com/",
+        url_image:
+            "https://res.cloudinary.com/crimson-flamingo/image/upload/v1647988717/3105%20portfolio%20screenshots/food.png",
+        description:
+            "The goal of this website is to create a food ordering website. Customers can come and add products to cart, update, remove items, and make payment using credit card. I used the stripe API for the CC processing. The website is deployed to AWS Amplify which is the perfect hosting solution for serverless.",
+        technologiesUsed: "Nextjs, Prisma, Postgres, Stripe, AWS, SCSS, Git",
+        gitHubLink:
+            "https://github.com/BestVersion7/awsamplifynext/tree/createprismapg",
+    },
+    {
+        title: "My Website",
         url_link: "https://hunterkf.com/blog",
         url_image:
-            "https://res.cloudinary.com/crimson-flamingo/image/upload/v1604689614/3105%20portfolio%20screenshots/myblog.png",
+            "https://res.cloudinary.com/crimson-flamingo/image/upload/v1647988549/3105%20portfolio%20screenshots/blog.png",
         description:
-            "The goal of this website is to apply the Next.js server side rendering and static paths. I migrated to Next.js because of these features and SEO. The articles I published were written back in college. I also have a master/admin page, hidden of course, for me to publish, update, delete articles. All the data is stored on PostgreSQL.",
+            "This my personal website. It is a full stack site rewritten in 2021 to use Next.js (previously React) server side rendering for better SEO. The blog pages have articles I've written back in college. I also have a master/admin page, hidden, for me to publish, update, delete articles. All the data is stored on PostgreSQL.",
         // "This is a full stack website deployed on Heroku. The goal of this website is for me to write and share articles with you. I have created my own API: REST for user authentication, and SOCKET.io for live comments. I also have a master/admin page running on web sockets for me to publish, update, delete articles real time. All the data is stored on PostgreSQL.",
         technologiesUsed: "Next.js, Vercel, SCSS, Postgres, Git",
         gitHubLink: "https://github.com/BestVersion7/hunterkenfan",
@@ -20,15 +31,5 @@ export const webProjects = [
         technologiesUsed:
             "React, MongoDB, ExpressJs, Heroku, Google Analytics, Git",
         gitHubLink: "https://github.com/BestVersion7/heroku-site",
-    },
-    {
-        title: "Food Recipe Blog (Not Working at the Moment 25/10/2020",
-        url_link: "https://bestversion7.github.io/portfolio/#/",
-        url_image:
-            "https://res.cloudinary.com/crimson-flamingo/image/upload/c_scale,h_794,w_794/v1559314999/3105%20portfolio%20screenshots/3105_static_site_screenshot.png",
-        description:
-            "This is a static website deployed on Github pages. The goal of this website is to be able to look up recipes for different dishes. I am using a third party API to fetch the recipes, images, url links on the recipe page.",
-        technologiesUsed: "React,Github, Git, Google Analytics",
-        gitHubLink: "https://github.com/BestVersion7/portfolio",
     },
 ];
