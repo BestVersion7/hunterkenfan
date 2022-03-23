@@ -1,12 +1,12 @@
 export const webProjects = [
     {
         title: "Ecommerce Store",
-        url_link: "https://createprismapg.d1pgiyfr7nyazb.amplifyapp.com/",
+        url_link: "https://awsamplifynext.vercel.app/store",
         url_image:
             "https://res.cloudinary.com/crimson-flamingo/image/upload/v1647988717/3105%20portfolio%20screenshots/food.png",
         description:
-            "The goal of this website is to create a food ordering website. Customers can come and add products to cart, update, remove items, and make payment using credit card. I used the stripe API for the CC processing. The website is deployed to AWS Amplify which is the perfect hosting solution for serverless.",
-        technologiesUsed: "Nextjs, Prisma, Postgres, Stripe, AWS, SCSS, Git",
+            "The goal of this website is to create a food ordering website. Customers can come and add products to cart, update, remove items, and make payment using credit card. I used the stripe API for the CC processing. The website is deployed to Vercel but had originially planned to be hosted on AWS Amplify. The costs were too high",
+        technologiesUsed: "Nextjs, Prisma, Postgres, Stripe, Vercel, SCSS, Git",
         gitHubLink:
             "https://github.com/BestVersion7/awsamplifynext/tree/createprismapg",
     },
