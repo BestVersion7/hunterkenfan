@@ -81,20 +81,7 @@ export const webDevelopmentSkills = [
         star: 0,
     },
     {
-        name: "HTML5",
-        starFill: 4,
-        starHalf: 0,
-        star: 1,
-    },
-
-    {
-        name: "CSS3 and SASS",
-        starFill: 3,
-        starHalf: 1,
-        star: 1,
-    },
-    {
-        name: "Developing APIs",
+        name: "Prisma",
         starFill: 4,
         starHalf: 1,
         star: 0,
@@ -118,10 +105,24 @@ export const webDevelopmentSkills = [
         star: 0,
     },
     {
+        name: "HTML5",
+        starFill: 4,
+        starHalf: 0,
+        star: 1,
+    },
+
+    {
+        name: "CSS3 and SASS",
+        starFill: 3,
+        starHalf: 1,
+        star: 1,
+    },
+
+    {
         name: "Web Sockets (Socket.io)",
         starFill: 4,
         starHalf: 0,
-        star: 0,
+        star: 1,
     },
     // {
     //     name: "UI/UX Testing",

@@ -1,17 +1,18 @@
 import { string } from "prop-types";
 import Image from "next/image";
 
-export const ProjectItem = ({
-    title,
-    url_link,
-    url_image,
-    description,
-    technologiesUsed,
-    githubLink,
-}) => {
+export const ProjectItem = ({ props }) => {
+    const {
+        title,
+        url_link,
+        url_image,
+        description,
+        technologiesUsed,
+        gitHubLink,
+    } = props;
     return (
         <article className="section-projects-web-items">
-            <h4>{title}</h4>
+            <h2>{title}</h2>
             <p>
                 <b>Link to Project: </b>
                 <a
@@ -27,11 +28,11 @@ export const ProjectItem = ({
                 <b>Link to Code: </b>
                 <a
                     style={{ wordWrap: "break-word" }}
-                    href={githubLink}
+                    href={gitHubLink}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {githubLink}
+                    {gitHubLink}
                 </a>
             </p>
             <Image

@@ -7,17 +7,17 @@ export const workExperience = [
         Date: "Feb 2021 - Present",
     },
     {
-        Company: "PTC",
+        Company: "PTC (thru Addison Staffing Group)",
         Position: "Accounts Receivable Contractor",
         Summary:
             "Highlight: Wrote a 400 line macro to automate a billing report to submit to portal daily. Saved 180 hours per year!",
         Date: "Jul 2019 - Sep 2020",
     },
     {
-        Company: "Five Star Senior Living",
+        Company: "Five Star Senior Living (thru Complete Staffing Group)",
         Position: "Accounts Payable Contractor",
         Summary:
-            "Highlight: Approved 220 invoices per day on Workday which is the highest within department!",
+            "Highlight: Processed and approved 500 invoices per week on Workday, which is top five highest in department.",
         Date: "Jul 2018 - Aug 2018",
     },
     {

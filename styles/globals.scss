@@ -219,18 +219,22 @@ body {
         @include mQ(40em) {
             padding: 0;
             display: grid;
+            align-items: center;
             justify-content: center;
-            // grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1em;
+            grid-template-columns: repeat(2, auto);
+            grid-gap: 1.5em;
         }
         @include mQ(70em) {
-            grid-template-columns: repeat(2, 1fr);
+            // grid-gap: 3em;
+            // grid-template-columns: repeat(3, 1fr);
         }
 
         .section-projects-web-items {
-            // width: 0%;
-            max-width: 30em;
+            // width: 100%;
             border: 0.1em solid black;
+            @include mQ(30em) {
+                width: 90%;
+            }
         }
     }
 }
