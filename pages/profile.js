@@ -25,12 +25,12 @@ const ProfilePage = () => {
                         alt="hunter"
                     />
                     <p>
-                        I am self-taught web developer with a background in
-                        finance. In the past 3 years, I have worked in accounts
-                        receivables and accounts payable in startups and large
-                        companies. Besides work, I like to build websites from
-                        scratch using javascript. Scroll down to see my
-                        projects! :)
+                        I am self-taught full stack web developer with a
+                        background in finance. In the past 3+ years, I have
+                        worked in the accounting departments for startups and
+                        large corporations. Besides work, I enjoy building
+                        websites and learning new technologies. Scroll down to
+                        see my projects!
                     </p>
                 </article>
 
@@ -44,10 +44,10 @@ const ProfilePage = () => {
                     />
                     <p>
                         I graduated Suffolk University in May 2019 located in
-                        Boston, Massachusetts, USA. During my time here, I got
-                        to meet diverse and interesting people. Through class
-                        and my own studies, I got hands on experience building
-                        mobile apps, consulting, database design, and more!
+                        Boston, MA. During my time here, I got to meet diverse
+                        and interesting people. Through class and my own
+                        studies, I got hands on experience building mobile apps,
+                        consulting, designing database architecture, and more!
                     </p>
                 </article>
             </div>

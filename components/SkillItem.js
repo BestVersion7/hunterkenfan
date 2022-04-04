@@ -20,7 +20,7 @@ export const SkillItem = ({ name, starFill, starHalf, star }) => {
             <span>{name} </span>
             <span>
                 <IconContext.Provider
-                    value={{ size: "15px", color: "darkorange" }}
+                    value={{ size: "1em", color: "darkorange" }}
                 >
                     {starsFill}
                     {starsHalf}
