@@ -50,5 +50,5 @@ ProjectItem.propTypes = {
     url_image: string.isRequired,
     description: string.isRequired,
     technologiesUsed: string.isRequired,
-    githubLink: string.isRequired,
+    gitHubLink: string.isRequired,
 };
