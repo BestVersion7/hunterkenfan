@@ -19,13 +19,14 @@ export const SkillItem = ({ name, starFill, starHalf, star }) => {
         <div className="section-skills-item-mapped">
             <span>{name} </span>
             <span>
-                <IconContext.Provider
+                xxxx
+                {/* <IconContext.Provider
                     value={{ size: "1em", color: "darkorange" }}
                 >
                     {starsFill}
                     {starsHalf}
                     {stars}
-                </IconContext.Provider>
+                </IconContext.Provider> */}
             </span>
         </div>
     );

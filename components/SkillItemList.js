@@ -7,34 +7,34 @@ import { SkillItem } from "./SkillItem";
 
 const SkillPage = () => {
     return (
-        <div className="section-skills">
+        <>
+            <h3>Business Skills</h3>
             <div className="section-skills-item">
                 {businessSkills.map(({ name, star, starFill, starHalf }, i) => {
                     return (
-                        <div key={i}>
-                            <SkillItem
-                                name={name}
-                                starFill={starFill}
-                                starHalf={starHalf}
-                                star={star}
-                            />
-                        </div>
+                        <SkillItem
+                            key={i}
+                            name={name}
+                            starFill={starFill}
+                            starHalf={starHalf}
+                            star={star}
+                        />
                     );
                 })}
             </div>
+
             <h3>Web Development</h3>
             <div className="section-skills-item">
                 {webDevelopmentSkills.map(
                     ({ name, star, starFill, starHalf }, i) => {
                         return (
-                            <div key={i}>
-                                <SkillItem
-                                    name={name}
-                                    starFill={starFill}
-                                    starHalf={starHalf}
-                                    star={star}
-                                />
-                            </div>
+                            <SkillItem
+                                key={i}
+                                name={name}
+                                starFill={starFill}
+                                starHalf={starHalf}
+                                star={star}
+                            />
                         );
                     }
                 )}
@@ -53,7 +53,7 @@ const SkillPage = () => {
                     );
                 })}
             </div>
-        </div>
+        </>
     );
 };
 

@@ -12,8 +12,7 @@ const SkillPage = () => {
                 quote="The reason I've been able to be so financially successful is that my focus has never, ever for one minute been money"
                 author="Oprah"
             />
-            <h3>Business Skills</h3>
-            <SkillItemList />;
+            <SkillItemList />
         </section>
     );
 };

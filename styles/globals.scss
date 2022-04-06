@@ -122,18 +122,11 @@ body {
 
 .section-skills {
     background: rgb(231, 230, 158);
-    padding: 0 1em;
-
-    // @include mQ(30em) {
-    //     padding: 0 3em;
-    // }
-    // @include mQ(50em) {
-    //     padding: 0 7em;
-    // }
-    text-align: center;
     .section-skills-item {
         display: grid;
-        text-align: left;
+        word-wrap: break-word;
+        margin: 0 5em;
+
         @include mQ(30em) {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -143,9 +136,6 @@ body {
         .section-skills-item-mapped {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            max-width: 25em;
-            @include mQ(30em) {
-            }
         }
     }
 }
