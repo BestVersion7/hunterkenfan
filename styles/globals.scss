@@ -85,12 +85,12 @@ header {
 }
 
 .section-work-container {
-    padding: 0 1em;
+    margin: 0 1em;
     @include mQ(30em) {
-        padding: 0 3em;
+        margin: 0 3em;
     }
     @include mQ(50em) {
-        padding: 0 7em;
+        margin: 0 5em;
     }
     .section-work-container-items {
         @include mQ(30em) {
@@ -116,7 +116,7 @@ body {
         text-align: center;
     }
     p {
-        padding: 0 1em;
+        // padding: 0 1em;
     }
 }
 
@@ -124,18 +124,24 @@ body {
     background: rgb(231, 230, 158);
     .section-skills-item {
         display: grid;
-        word-wrap: break-word;
-        margin: 0 5em;
-
+        // word-wrap: break-word;
+        margin: 0 1em;
         @include mQ(30em) {
             grid-template-columns: repeat(2, 1fr);
+            column-gap: 5em;
+            margin: 0 3em;
         }
-        @include mQ(60em) {
+        @include mQ(50em) {
             grid-template-columns: repeat(3, 1fr);
+            column-gap: 10em;
+            margin: 0 5em;
         }
         .section-skills-item-mapped {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
+            .section-skills-item-mapped-icon {
+                justify-self: right;
+            }
         }
     }
 }
@@ -146,14 +152,19 @@ body {
         margin-top: 0;
     }
     .section-profile-about {
-        padding: 0 1em;
+        margin: 0 1em;
+
         @include mQ(30em) {
             display: grid;
-            padding: 0 3em;
+            margin: 0 3em;
+            grid-gap: 3em;
             grid-template-columns: minmax(auto, 7em) 1fr;
         }
         @include mQ(50em) {
-            padding: 0 7em;
+            margin: 0 5em;
+        }
+        .rounded-full {
+            border-radius: 15em;
         }
     }
 }
@@ -194,36 +205,26 @@ body {
 }
 
 .section-projects {
-    // padding: 0 1em;
     background-color: rgb(240, 255, 215);
-    @include mQ(30em) {
-        padding: 0 3em;
-    }
-    @include mQ(50em) {
-        padding: 0 7em;
-    }
-
     .section-projects-web {
         // text-align: center;
-        padding: 0 1em;
-        @include mQ(40em) {
-            padding: 0;
+        margin: 0 1em;
+        @include mQ(30em) {
+            margin: 0 3em;
             display: grid;
-            align-items: center;
-            justify-content: center;
-            grid-template-columns: repeat(2, auto);
+            // grid-template-columns: repeat(2, 1fr);
             grid-gap: 1.5em;
         }
-        @include mQ(70em) {
-            // grid-gap: 3em;
-            // grid-template-columns: repeat(3, 1fr);
+        @include mQ(50em) {
+            margin: 0 5em;
+            grid-gap: 3em;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .section-projects-web-items {
             // width: 100%;
             border: 0.1em solid black;
             @include mQ(30em) {
-                width: 90%;
             }
         }
     }

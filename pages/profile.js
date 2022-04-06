@@ -23,6 +23,7 @@ const ProfilePage = () => {
                         layout="responsive"
                         src="https://res.cloudinary.com/crimson-flamingo/image/upload/v1603662887/1104%20profile/me.png"
                         alt="hunter"
+                        className="rounded-full"
                     />
                     <p>
                         I am self-taught full stack web developer with a

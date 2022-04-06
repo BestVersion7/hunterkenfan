@@ -41,12 +41,12 @@ export const businessSkills = [
     //     starHalf: 0,
     //     star: 1,
     // },
-    {
-        name: "Tableau",
-        starFill: 3,
-        starHalf: 1,
-        star: 1,
-    },
+    // {
+    //     name: "Tableau",
+    //     starFill: 3,
+    //     starHalf: 1,
+    //     star: 1,
+    // },
     // {
     //     name: "3Elite",
     //     starFill: 4,
@@ -87,7 +87,7 @@ export const webDevelopmentSkills = [
         star: 0,
     },
     {
-        name: "AWS Microservices",
+        name: "AWS (EC2, RDS, Amplify, R53)",
         starFill: 4,
         starHalf: 0,
         star: 1,
@@ -110,20 +110,18 @@ export const webDevelopmentSkills = [
         starHalf: 0,
         star: 1,
     },
-
     {
-        name: "CSS3 and SASS",
-        starFill: 3,
-        starHalf: 1,
-        star: 1,
-    },
-
-    {
-        name: "Web Sockets (Socket.io)",
+        name: "CSS3, SASS",
         starFill: 4,
         starHalf: 0,
         star: 1,
     },
+    // {
+    //     name: "Web Socket",
+    //     starFill: 4,
+    //     starHalf: 0,
+    //     star: 1,
+    // },
     // {
     //     name: "UI/UX Testing",
     //     starFill: 3,
@@ -140,10 +138,28 @@ export const toolSkills = [
         star: 0,
     },
     {
-        name: "VSC",
+        name: "VSCode",
         starFill: 4,
         starHalf: 1,
         star: 0,
+    },
+    {
+        name: "Postman/Thunder Client",
+        starFill: 4,
+        starHalf: 1,
+        star: 0,
+    },
+    {
+        name: "Stripe",
+        starFill: 4,
+        starHalf: 0,
+        star: 1,
+    },
+    {
+        name: "Auth 2.0",
+        starFill: 4,
+        starHalf: 0,
+        star: 1,
     },
     // {
     //     name: "Adobe Photoshop",

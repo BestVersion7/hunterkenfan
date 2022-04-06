@@ -13,6 +13,9 @@ const SkillPage = () => {
                 author="Oprah"
             />
             <SkillItemList />
+            <br />
+            <br />
+            <br />
         </section>
     );
 };
