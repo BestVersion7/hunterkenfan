@@ -47,9 +47,6 @@ const Navigation = () => {
                         <Link href="/project">
                             <a className="section-nav-links">Project</a>
                         </Link>
-                        <Link href="/blog">
-                            <a className="section-nav-links">Blog</a>
-                        </Link>
                     </div>
                 ) : (
                     <div className="section-link-container-desktop">
@@ -85,14 +82,6 @@ const Navigation = () => {
                                 className="section-nav-links"
                             >
                                 Project
-                            </a>
-                        </Link>
-                        <Link href="/blog">
-                            <a
-                                onClick={handleClickLink}
-                                className="section-nav-links"
-                            >
-                                Blog
                             </a>
                         </Link>
                     </div>
