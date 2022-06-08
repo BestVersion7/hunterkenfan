@@ -17,12 +17,12 @@ export const businessSkills = [
         starHalf: 1,
         star: 1,
     },
-    {
-        name: "Google Analytics",
-        starFill: 4,
-        starHalf: 1,
-        star: 0,
-    },
+    // {
+    //     name: "Google Analytics",
+    //     starFill: 4,
+    //     starHalf: 1,
+    //     star: 0,
+    // },
     // {
     //     name: "Salesforce",
     //     starFill: 3,
@@ -81,18 +81,6 @@ export const webDevelopmentSkills = [
         star: 0,
     },
     {
-        name: "Prisma",
-        starFill: 4,
-        starHalf: 1,
-        star: 0,
-    },
-    {
-        name: "AWS (EC2, RDS, Amplify, R53)",
-        starFill: 4,
-        starHalf: 0,
-        star: 1,
-    },
-    {
         name: "SQL (Postgres)",
         starFill: 4,
         starHalf: 0,
@@ -116,18 +104,59 @@ export const webDevelopmentSkills = [
         starHalf: 0,
         star: 1,
     },
-    // {
-    //     name: "Web Socket",
-    //     starFill: 4,
-    //     starHalf: 0,
-    //     star: 1,
-    // },
-    // {
-    //     name: "UI/UX Testing",
-    //     starFill: 3,
-    //     starHalf: 0,
-    //     star: 2,
-    // },
+
+    {
+        name: "UI/UX Testing",
+        starFill: 3,
+        starHalf: 0,
+        star: 2,
+    },
+];
+
+export const thirdParties = [
+    {
+        name: "OAuth 2.0",
+        starFill: 4,
+        starHalf: 1,
+        star: 0,
+    },
+    {
+        name: "Google Console",
+        starFill: 4,
+        starHalf: 1,
+        star: 0,
+    },
+
+    {
+        name: "Stripe",
+        starFill: 4,
+        starHalf: 1,
+        star: 0,
+    },
+    {
+        name: "SendGrid",
+        starFill: 4,
+        starHalf: 1,
+        star: 0,
+    },
+    {
+        name: "Cloudinary",
+        starFill: 4,
+        starHalf: 1,
+        star: 0,
+    },
+    {
+        name: "Prisma",
+        starFill: 4,
+        starHalf: 1,
+        star: 0,
+    },
+    {
+        name: "AWS RDS",
+        starFill: 4,
+        starHalf: 0,
+        star: 1,
+    },
 ];
 
 export const toolSkills = [
@@ -144,7 +173,7 @@ export const toolSkills = [
         star: 0,
     },
     {
-        name: "Postman/Thunder Client",
+        name: "Postman (Thunder Client)",
         starFill: 4,
         starHalf: 1,
         star: 0,

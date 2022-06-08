@@ -5,7 +5,7 @@ const Landing = () => {
         document.getElementById("section-profile-id").scrollIntoView();
     };
     return (
-        <div className="section-home">
+        <div style={{ position: "relative" }} className="section-home">
             <div className="section-home-name">
                 <h2>Hi I'm Hunter</h2>
                 <h2>Welcome to my site! </h2>

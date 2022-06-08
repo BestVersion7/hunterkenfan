@@ -10,10 +10,7 @@ const ProfilePage = () => {
             <Meta title="Profile" />
 
             <div id="section-profile-id">
-                <br />
-                <br />
-                <br />
-                <h1>Profile</h1>
+                <br /> <h1>Profile</h1>
                 <hr />
                 <h2>My Story</h2>
                 <article className="section-profile-about">
@@ -34,7 +31,6 @@ const ProfilePage = () => {
                         see my projects!
                     </p>
                 </article>
-
                 <article className="section-profile-about">
                     <Image
                         height="4em"

@@ -3,7 +3,7 @@ import { workExperience } from "./data/workExperience";
 
 const WorkExperienceItemList = () => {
     return (
-        <div className="section-profile">
+        <div>
             <div className="section-work-container">
                 {workExperience.map(
                     ({ Company, Position, Date, Summary }, i) => {

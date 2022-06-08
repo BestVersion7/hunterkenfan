@@ -6,10 +6,14 @@ import Landing from "../components/Landing";
 export default function Home() {
     return (
         <div>
+            <br />
             <Landing />
-            <Profile />
+            <br />
+            <Profile /> <br />
             <Skill />
+            <br />
             <Project />
+            <br />
         </div>
     );
 }

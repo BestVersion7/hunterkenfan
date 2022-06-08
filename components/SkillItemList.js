@@ -1,5 +1,6 @@
 import {
     toolSkills,
+    thirdParties,
     webDevelopmentSkills,
     businessSkills,
 } from "./data/skills";
@@ -23,7 +24,7 @@ const SkillPage = () => {
                 })}
             </div>
 
-            <h3>Web Development</h3>
+            <h3>Full-Stack Web Development</h3>
             <div className="section-skills-item">
                 {webDevelopmentSkills.map(
                     ({ name, star, starFill, starHalf }, i) => {
@@ -38,6 +39,20 @@ const SkillPage = () => {
                         );
                     }
                 )}
+            </div>
+            <h3>Third-Party APIs</h3>
+            <div className="section-skills-item">
+                {thirdParties.map(({ name, star, starFill, starHalf }, i) => {
+                    return (
+                        <SkillItem
+                            key={i}
+                            name={name}
+                            starFill={starFill}
+                            starHalf={starHalf}
+                            star={star}
+                        />
+                    );
+                })}
             </div>
             <h3>Tools</h3>
             <div className="section-skills-item">

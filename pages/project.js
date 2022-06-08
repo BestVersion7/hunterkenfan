@@ -6,13 +6,14 @@ const ProjectPage = () => {
     return (
         <section className="section-projects">
             <Meta title="Projects" />
-            <br />
-            <h2>Passion Projects: </h2>
+            <br /> <h2>Passion Projects: </h2>
             <Quote
                 quote="The secret to getting ahead is getting started."
                 author="Mark Twain"
             />
             <ProjectItemList /> <br />
+            <br />
+            <br />
         </section>
     );
 };

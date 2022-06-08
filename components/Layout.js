@@ -5,7 +5,7 @@ export default function Layout({ children }) {
         <>
             <Meta title="Website" />
             <Navigation />
-            <main>{children}</main>
+            {children}
         </>
     );
 }
