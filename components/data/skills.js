@@ -178,18 +178,7 @@ export const toolSkills = [
         starHalf: 1,
         star: 0,
     },
-    {
-        name: "Stripe",
-        starFill: 4,
-        starHalf: 0,
-        star: 1,
-    },
-    {
-        name: "Auth 2.0",
-        starFill: 4,
-        starHalf: 0,
-        star: 1,
-    },
+
     // {
     //     name: "Adobe Photoshop",
     //     starFill: 4,
