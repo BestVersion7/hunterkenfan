@@ -35,7 +35,7 @@ export const webProjects = [
     // },
     {
         title: "My Website",
-        url_link: "https://hunterkf.com/blog",
+        url_link: "https://hunterkf.com",
         url_image:
             "https://res.cloudinary.com/crimson-flamingo/image/upload/c_fill,g_auto,w_1000,h_1000/v1654140524/3105%20portfolio%20screenshots/mysite.png",
         description:
